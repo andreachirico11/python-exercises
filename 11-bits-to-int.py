@@ -6,3 +6,16 @@
 # input: “1 0 0 1 1 0”, prints 36
 # input: “1”, prints 1
 # input: “1 0 1 0 0”, prints 20
+
+
+def bits_to_int(bits):
+    output = 0
+    bits = bits.replace(' ', '')
+    for i in range(len(bits)):
+        output += pow(2, i) * int(bits[len(bits) - 1 - i])
+    return output
+
+
+print(bits_to_int("1 0 1 0 0"))
+print(bits_to_int("1"))
+print(bits_to_int("1 0 0 1 1 0"))
