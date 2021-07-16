@@ -8,7 +8,7 @@
 # input: “1 0 1 0 0”, prints 20
 
 
-def bits_to_int(bits):
+def bits_to_int_fn(bits):
     output = 0
     bits = bits.replace(' ', '')
     for i in range(len(bits)):
@@ -16,6 +16,6 @@ def bits_to_int(bits):
     return output
 
 
-print(bits_to_int("1 0 1 0 0"))
-print(bits_to_int("1"))
-print(bits_to_int("1 0 0 1 1 0"))
+# print(bits_to_int_fn("1 0 1 0 0"))
+# print(bits_to_int_fn("1"))
+# print(bits_to_int_fn("1 0 0 1 1 0"))
