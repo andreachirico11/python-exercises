@@ -14,6 +14,7 @@
 # e.g.,
 # Example 1:
 # Input:
+
 valid = [
     ["5", "3", ".", ".", "7", ".", ".", ".", "."],
     ["6", ".", ".", "1", "9", "5", ".", ".", "."],
@@ -91,7 +92,3 @@ def sudoku_validator(sudoku):
             if not mat_n_occurrence(mat_slice):
                 return False
     return True
-
-
-print(sudoku_validator(valid))
-print(sudoku_validator(invalid))
