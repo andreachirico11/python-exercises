@@ -1,0 +1,2 @@
+This is a very simple text file!
+Now let's make a file called read.py and add the following.
