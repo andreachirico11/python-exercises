@@ -1,0 +1,7 @@
+cat=gatto
+sea=mare 
+cloud=nuvola
+dog=gianni
+friend=amico
+roberto=roberti
+fish=pesce
