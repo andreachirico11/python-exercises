@@ -1,11 +1,11 @@
 import numpy as np
 
-x = np.array(range(0, 10))
+x = np.array(range(0, 9)).reshape(3, 3)
 
 
 print(x)
 
-y = np.array([1, 2, 3], [3, 4])
+y = np.array([[1, 2, 3], [3, 4, 6]])
 
 z = np.concatenate((x, y), axis=0)
 
