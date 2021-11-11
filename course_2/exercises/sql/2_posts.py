@@ -11,9 +11,7 @@
 # •Write a query that returns the top 10 users ranked by number of likes
 
 import db_utils
-import random
-from functools import reduce
-import string
+from randoms_generators import get_random_num, get_random_string
 
 db = db_utils.get_db_ref()
 cursor = db.cursor()
@@ -22,14 +20,6 @@ cursor = db.cursor()
 def print_tuple(tup):
     for member in tup:
         print(member)
-
-
-def get_random_num(max):
-    return random.randrange(1, max)
-
-
-def get_random_string(length):
-    return reduce(lambda acc, curr: acc + string.ascii_lowercase[get_random_num(len(string.ascii_lowercase))], range(length), '')
 
 
 def create_t():
